@@ -1,7 +1,7 @@
 from tkinter import *
 
 """
-Alex Laitila
+AAAlex Laitila
 alex.laitila@tuni.fi
 152043533
 Tatu Nyberg
