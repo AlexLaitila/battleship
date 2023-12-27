@@ -1,15 +1,6 @@
 from tkinter import *
 
 """
-Alex Laitila
-alex.laitila@tuni.fi
-152043533
-Tatu Nyberg
-tatu.nyberg@tuni.fi
-151311790
-
-We are aiming to get points in the advanced GUI.
-
 This program creates a simple battleship game based on another text document
 where there is the name and the coordinates of the ships.
 
