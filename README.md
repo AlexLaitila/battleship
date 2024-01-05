@@ -1,5 +1,5 @@
 This program creates a simple battleship game based on another text document
-where there is the name and the coordinates of the ships.
+that contains the name and the coordinates of the ships.
 
 Game manual / description:
 
