@@ -108,6 +108,7 @@ class GameGUI:
         """
         # Get the filename from the entry widget
         filename = self.__filename_entry.get()
+        
         if filename:
             if self.game and not self.game.valid_file:
                 # Clear previous invalid file message
@@ -119,6 +120,7 @@ class GameGUI:
             self.__image_label.grid_forget()
             self.__introduction.grid_forget()
             self.game = Game(self, filename)
+            
             if self.game.setup():
                 # If setup is successful, start the game
                 pass
@@ -146,6 +148,7 @@ class GameGUI:
                                             "to play the default version)")
                 self.__introduction.grid(row=2, column=4, columnspan=8,
                                          sticky="nsew")
+                
         else:
             # If entry slot is empty, it calls for clear message method and
             # gives a new error message
@@ -240,9 +243,11 @@ class Game:
         board, and prints it.
         """
         self.valid_file = self.read_file()
+        
         if self.valid_file:
             self.create_board()
             self.print_board()
+            
         return self.valid_file
 
     def read_file(self):
